@@ -1,6 +1,16 @@
 #Trabajo práctico integrador JS
 __Profesora: Erica Gentilini__
+
 __Alumna: Estefanía Benicio__
+
+/*
+*Trabajo práctico integrador JS
+*Grupos separados: Comisión 22021
+*PROFESORA: ERICA GENTILI
+*ALUMNA:ESTEFANI BENICIO
+*/
+
+
 
 ##Grupos separados: Comision 22570
 Deberán replicar la siguiente sección (es una sección que se debe agregar al integrador front-End) al presionar en el enlace “tickets”.
