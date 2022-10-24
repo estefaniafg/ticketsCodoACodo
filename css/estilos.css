@@ -1,0 +1,68 @@
+/*
+*Trabajo práctico integrador JS
+*Grupos separados: Comisión 22021
+*PROFESORA: ERICA GENTILI
+*ALUMNA:ESTEFANI BENICIO
+*/
+/*NAVEGADOR*/
+.NavDerecha{
+    margin-left: 20%;
+}
+
+/*SECTION*/
+section{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.tarjeta{
+    padding: 10%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    border-radius: 0%;
+    margin: -3%;
+}
+#venta{
+    size: 3vw;
+    size: 3vh;
+}
+#valor{
+    size: 6vw;
+    size: 3vh;
+}
+
+/*color del boton del formualrio*/
+#section{
+    margin-left: 25%;
+    margin-right: 25%;
+    }
+    
+    #btnCalcular, #btnBorrar{
+      background-color: rgb(150, 201, 62);
+      color: aliceblue;
+      text-size-adjust: 1vw;
+    }
+    
+    #btnCalcular:hover, #btnBorrar:hover{
+    background-color: rgb(210, 247, 147);
+}
+
+/*FOOTER*/
+.parrafoFooter{
+    margin: 2%;
+  }
+  .footer{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    margin-top: 25px;
+    background-image: linear-gradient(to right, rgb(28, 54, 67),rgb(30, 83, 114));
+  }
+
+  /*Color del texto de footer*/
+  footer div a{
+  color: aliceblue;
+  text-decoration:none; 
+  }
+  a:link, a:visited, a:active {
+    text-decoration:none;
+}

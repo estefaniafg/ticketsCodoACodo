@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">   
+    <script type="text/javascript" src="./js/index.js"></script>    
+</head>
+<body>
+<header>
+            <!---/*
+            *Trabajo práctico integrador JS
+            *Grupos separados: Comisión 22021
+            *PROFESORA: ERICA GENTILI
+            *ALUMNA:ESTEFANI BENICIO
+            */-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Conf Bs As</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="NavDerecha collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="" class="nav-link text-en" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="" class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">              
+                <a id="" class="nav-link" href="#">La conferencia</a>
+              </li>
+              <li class="hLNav">
+                <a id="" class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="hLNav">
+                <a id="" class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="hLNav">
+                <a id="blanco" class="nav-link text-white " href="#">Conviértete en un orador</a>
+              </li>
+              <li class="hLNav">
+                <a id="verde" class="nav-link text-success " href="#">Comprar ticket</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<br>
+<section>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">                      
+            <div class="card border-primary text-center tarjeta">                                
+                <h3 class="card-title">Estudiantes</h3>
+                <br>
+                <h5 class="card-text">Tiene un descuento</h5>
+                <br>
+                <h4 class="card-title">80%</h4>
+                <br>
+                <p class="card-text">*presentar documentación</p>
+          </div>
+        </div>
+        <div class="col">          
+            <div class="card border-info text-center tarjeta">                  
+                <h3 class="card-title">Trainee</h3>
+                <br>
+                <h5 class="card-text">Tiene un descuento</h5>
+                <br>
+                <h4 class="card-title">50%</h4>
+                <br>
+                <p class="card-text">*presentar documentación</p>
+          </div>
+        </div>
+        <div class="col">          
+            <div class="card border-warning text-center tarjeta">
+                <h3 class="card-title">Junior</h3>
+                <br>
+                <h5 class="card-text">Tiene un descuento</h5>
+                <br>
+                <h4 class="card-title">15%</h4>
+                <br>
+                <p class="card-text">*presentar documentación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <p id="venta" class="text-center">VENTA</p>
+      <h1 id="valor" class="text-center">VALOR DE TICKET $200</h1>
+  <br>
+  <div>
+      <form action="">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+          </div>
+          <br>
+          <div>
+            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
+          </div>
+          <br>
+          <div class="row">
+          <div class="col-md-6">
+            <label for="form-control" class="form-label">Cantidad</label>
+            <input type="number" min="1" class="form-control" id="cantidadEntrada">
+          </div>
+          <div class="col-md-6">
+            <label for="form-control" class="form-label" class="form-control">Categoria</label>
+            <select class="form-control" id="categoria">
+              <option value="estudiante"selected>Estudiante</option>
+              <option value="trainne">Trainee</option>
+              <option value="junior">Junior</option>                    
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="form">
+          <div id="totalCompra" class="alert-primary" role="alert">
+              Total a Pagar: $
+          </div>
+  
+        <br>
+          <div class="row">
+            <div class="col">
+              <button type="reset" id="btnBorrar" onclick="borrar()" class="btn col-12">Borrar</button>
+            </div>
+            <div class="col">
+              <button type="button" id="btnCalcular" onclick="resume()" class="btn col-12">Resumen</button>
+            </div>
+          </div>
+        </form>
+  </div>
+  
+</section>
+
+<footer>    
+    <div class="footer">        
+        <a class="parrafoFooter">Preguntas<br>
+        frecuentes</a>
+        <a class="parrafoFooter">Contáctenos</a>
+        <a class="parrafoFooter">Prensa</a>
+        <a class="parrafoFooter">Conferencias</a>
+        <a class="parrafoFooter">Términos
+            y condiciones</a>
+        <a class="parrafoFooter">Privacidad</a>
+        <a class="parrafoFooter">Estudiantes</a>    
+    </div>
+</footer>
+    <!-- Popper y JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
