@@ -7,6 +7,9 @@
 /*boton Borrar: limpia la celda */
  function borrar(){
     document.getElementById('totalCompra').innerHTML="Total a Pagar: $";
+    document.getElementById('nombre').innerHTML;
+    document.getElementById('apellido').innerHTML;
+    document.getElementById('email').innerHTML;
 }
  /*Boton resume: calcula el valor segun categoria*/
 function resume(){
